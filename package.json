@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vueuse/core": "^8.1.2",
     "ali-oss": "^6.17.0",
     "axios": "^1.8.4",

@@ -17,8 +17,7 @@ const EMITS_CHANGE = 'change'
 </script>
 
 <script setup>
-import { onUnmounted } from '@vue/runtime-core'
-import { computed, watch, ref } from 'vue'
+import { computed, watch, ref, onUnmounted } from 'vue'
 import dayjs from './utils'
 
 const emits = defineEmits([EMITS_FINISH, EMITS_CHANGE])
