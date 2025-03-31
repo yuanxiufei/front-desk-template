@@ -1,0 +1,12 @@
+node_modules
+dist
+public
+resources
+.git
+.husky
+*.svg
+*.sh
+*.min.js
+*.min.css
+.vscode
+package-lock.json
