@@ -43,7 +43,88 @@ npm run preview
 │   └── permission.js      # 权限控制
 ├── public/                # 静态资源目录
 ├── resources/             # 项目资源文件
-└── .env.*                 # 环境变量配置
+├── .vscode/               # VS Code 配置
+├── .husky/                # Git Hooks 配置
+├── .env.*                 # 环境变量配置
+├── .eslintrc.js           # ESLint 配置
+├── .prettierrc            # Prettier 配置
+├── postcss.config.js      # PostCSS 配置
+├── tailwind.config.js     # TailwindCSS 配置
+├── vite.config.js         # Vite 配置
+└── commitlint.config.js   # Commit 规范配置
+```
+
+## 代码规范
+
+### 代码格式化
+
+项目使用 ESLint + Prettier 进行代码格式化和规范检查：
+
+```bash
+# 运行 ESLint 检查
+npm run lint
+
+# 运行 Prettier 格式化
+npm run format
+```
+
+### Git 提交规范
+
+项目使用 commitlint 强制规范 Git 提交信息格式。提交格式如下：
+
+```bash
+type(scope?): subject
+```
+
+- type：提交类型
+  - feat：新功能
+  - fix：修复
+  - docs：文档变更
+  - style：代码格式（不影响代码运行的变动）
+  - refactor：重构（既不是新增功能，也不是修改 bug 的代码变动）
+  - perf：性能优化
+  - test：增加测试
+  - chore：构建过程或辅助工具的变动
+
+- scope：影响范围（可选）
+- subject：提交描述
+
+示例：
+```bash
+# 添加新功能
+git commit -m "feat(user): 添加用户登录功能"
+
+# 修复 bug
+git commit -m "fix(auth): 修复token过期判断错误"
+```
+
+### 开发流程
+
+1. 拉取最新代码
+```bash
+git pull origin main
+```
+
+2. 创建功能分支
+```bash
+git checkout -b feature/xxx
+```
+
+3. 开发完成后，运行代码检查
+```bash
+npm run lint
+npm run format
+```
+
+4. 提交代码
+```bash
+git add .
+git commit -m "feat(xxx): xxx"
+```
+
+5. 推送到远程仓库
+```bash
+git push origin feature/xxx
 ```
 
 ## 主要依赖
