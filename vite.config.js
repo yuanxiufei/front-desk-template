@@ -29,6 +29,16 @@ export default defineConfig({
         target: 'https://api.imooc-front.lgdsunday.club/',
         // 跨域
         changeOrigin: true
+      },
+      '/test-api': {
+        target: 'https://test-api.imooc-front.lgdsunday.club/',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/test-api/, '')
+      },
+      '/prod-api': {
+        target: 'https://prod-api.imooc-front.lgdsunday.club/',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/prod-api/, '')
       }
     }
   }

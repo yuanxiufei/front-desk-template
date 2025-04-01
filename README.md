@@ -16,10 +16,13 @@ npm install
 # 开发环境运行
 npm run dev
 
-# 生产环境构建
-npm run build
+# 测试环境构建
+npm run build:test
 
-# 预览生产构建
+# 生产环境构建
+npm run build:prod
+
+# 预览构建结果
 npm run preview
 ```
 
@@ -77,6 +80,7 @@ type(scope?): subject
 ```
 
 - type：提交类型
+
   - feat：新功能
   - fix：修复
   - docs：文档变更
@@ -90,6 +94,7 @@ type(scope?): subject
 - subject：提交描述
 
 示例：
+
 ```bash
 # 添加新功能
 git commit -m "feat(user): 添加用户登录功能"
@@ -101,28 +106,33 @@ git commit -m "fix(auth): 修复token过期判断错误"
 ### 开发流程
 
 1. 拉取最新代码
+
 ```bash
 git pull origin main
 ```
 
 2. 创建功能分支
+
 ```bash
 git checkout -b feature/xxx
 ```
 
 3. 开发完成后，运行代码检查
+
 ```bash
 npm run lint
 npm run format
 ```
 
 4. 提交代码
+
 ```bash
 git add .
 git commit -m "feat(xxx): xxx"
 ```
 
 5. 推送到远程仓库
+
 ```bash
 git push origin feature/xxx
 ```
@@ -172,5 +182,3 @@ git push origin feature/xxx
 - 🎯 表单验证集成
 - 🖼️ 图片上传和裁剪
 - 💳 支付功能集成
-
-

@@ -5,7 +5,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:vue/vue3-essential', '@vue/eslint-config-standard', '@vue/prettier'],
+  extends: ['plugin:vue/vue3-essential', '@vue/eslint-config-standard', 'prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@babel/eslint-parser',
@@ -18,14 +18,6 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'space-before-function-paren': 'off',
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        semi: false,
-        printWidth: 100
-      }
-    ]
+    'space-before-function-paren': 'off'
   }
 }
