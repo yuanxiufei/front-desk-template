@@ -9,11 +9,13 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
+      dts: false, // 生成components.d.ts 全局定义文件
       resolvers: [
         AntDesignVueResolver({
           importStyle: false
         })
-      ]
+      ],
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.tsx$/] // 包含的文件类型
     }),
     createSvgIconsPlugin({
       iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
