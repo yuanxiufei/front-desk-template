@@ -65,6 +65,7 @@
       @success="onCaptchaSuccess"
     ></slider-captcha-vue>
   </div>
+  <a-button>antdegin-vue</a-button>
 </template>
 
 <script></script>

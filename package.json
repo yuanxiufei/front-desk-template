@@ -29,7 +29,6 @@
     "gsap": "^3.9.1",
     "md5": "^2.3.0",
     "vee-validate": "^4.5.10",
-    "vite-plugin-svg-icons": "^2.0.1",
     "vue": "^3.3.0",
     "vue-router": "^4.0.14",
     "vuex": "^4.0.2",
@@ -63,7 +62,7 @@
     "typescript": "^5.0.2",
     "unplugin-vue-components": "^28.4.1",
     "vite": "^6.2.3",
-    "vite-plugin-svg-icons": "^0.1.0",
+    "vite-plugin-svg-icons": "^2.0.1",
     "vue-eslint-parser": "^9.3.2"
   },
   "config": {
