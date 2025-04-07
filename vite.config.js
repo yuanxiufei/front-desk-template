@@ -2,11 +2,14 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path, { join } from 'path'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
-
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    AntDesignVueResolver({
+      importStyle: false // 设置为 false 表示不自动引入组件的样式文件
+    }),
     createSvgIconsPlugin({
       // 指定需要缓存的图标文件夹
       iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
