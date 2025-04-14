@@ -50,7 +50,8 @@
           登录
         </m-button>
       </vee-form>
-      <a-button>antdegin-vue</a-button>
+      <a-button></a-button>
+      <a-button type="primary" danger ghost>前端ui是antdegin-vue</a-button>
       <div class="flex justify-around mt-4">
         <!-- QQ -->
         <qq-login-vue></qq-login-vue>
@@ -65,7 +66,6 @@
       @success="onCaptchaSuccess"
     ></slider-captcha-vue>
   </div>
-  <a-button>antdegin-vue</a-button>
 </template>
 
 <script></script>
