@@ -33,6 +33,9 @@ export default defineConfig({
   // 代理
   server: {
     hmr: true,
+    host: 'hsa.guahao-test.com',
+    // host: 'localhost',
+    port: 8000,
     proxy: {
       // 代理所有 /api 的请求，该求情将被代理到 target 中
       '/api': {
